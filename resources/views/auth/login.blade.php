@@ -41,9 +41,19 @@
                              <strong>{{ $message }}</strong>
                           </span>
                       @enderror
-                    </div>
-
-                    
+             
+                  <input type="checkbox" onclick="myFunction()"> <span>Show Password</span>
+                     <script>
+                        function myFunction() {
+                          var x = document.getElementById("password");
+                          if (x.type === "password") {
+                            x.type = "text";
+                          } else {
+                            x.type = "password";
+                          }
+                        }
+                      </script>
+                           </div>
                     </div>
                     <div class="container">
                       <button class="btn btn-primary w-100" type="submit">Login</button>

@@ -15,7 +15,7 @@ class CompanyinfoController extends Controller
      */
     public function index()
     {
-        $data = Company::get(); 
+        $data = Company::get();
         return view('admin_page.company-information',compact('data'));
     }
     /**
